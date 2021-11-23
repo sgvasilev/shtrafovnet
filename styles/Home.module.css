@@ -1,0 +1,115 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.UINsearchblock {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.searchField {
+  height: 35px;
+  width: 400px;
+  margin-right: 11px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.userAutocomplete {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 400px;
+  min-height: 35px;
+  padding: 1px 2px;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.searchButton {
+  height: 35px;
+  width: 117px;
+  background-color: #63c556;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.shtrafData {
+  font-style: normal;
+  font-weight: normal;
+  border: 1px solid grey;
+  border-radius: 4px;
+  -webkit-box-shadow: 3px 4px 16px 1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 3px 4px 16px 1px rgba(34, 60, 80, 0.2);
+  box-shadow: 3px 4px 16px 1px rgba(34, 60, 80, 0.2);
+  margin-top: 10px;
+  padding: 5px;
+}
+.heading {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.text_1stcolumn {
+  text-align: left;
+  font-size: 16px;
+}
+.text_2ndcolumn {
+  text-align: left;
+  word-wrap: normal;
+  font-size: 16px;
+}
+.wrapper {
+  max-width: 685px;
+}
+.raz {
+  position: relative;
+}
+.raz span {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.raz input:placeholder-shown ~ span {
+  visibility: visible;
+}
+.raz input:placeholder-shown:focus ~ span,
+.raz input:not(:placeholder-shown) ~ span {
+  bottom: 100%;
+  opacity: 1;
+  font-size: 80%;
+  visibility: visible;
+  margin-left: 0px;
+}
